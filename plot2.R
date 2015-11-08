@@ -24,5 +24,9 @@ plot(df$DateTime, df$Global_active_power, type="n", xlab="", ylab="Global Active
 
 # Plots lines for datetime and active power
 lines(df$DateTime, df$Global_active_power)
+
+# Make sure information is flush on device
 dev.flush()
+
+# Close device
 dev.off()
